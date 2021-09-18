@@ -1,1 +1,223 @@
-"Hello World" 
+<style>
+  .main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;        
+    font-weight: 500;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .section {
+    display: flex;
+  }
+  .header--title {
+    color: #f71414bf;
+    font-size: 30px;        
+    font-weight: 500;
+  }
+  .header--subtitle {
+    color: black;
+    font-size: 15px;
+  }
+  .separator {
+    height: 2px;
+    margin-bottom: 20px;
+    background: black;
+    border: none;
+  }    
+  .section--column {
+    margin-left: 25px;
+    text-align: start;
+  }
+  .section--column:first-child {
+    width: 35%;
+    margin-left: 0;
+    margin-right: 25px;        
+    text-align: end;
+  }
+  .article {
+    margin-bottom: 18px;
+  }
+  .article--title {
+    margin-bottom: 13px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .contact-info {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 13px;
+  }
+
+  .contact-info--icon { 
+    width: 15px;
+    height: 15px;  
+    padding: 4px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f71414bf;
+    border-radius: 100%;
+  }
+
+  .contact-info--icon__email { 
+    width: 15px;
+  }
+
+  .contact-info--icon__skype { 
+    width: 19px;
+  }
+
+  .contact-info--icon__phone { 
+    width: 10px;
+  }
+
+  .info {
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+
+  .info--title {
+    margin: 0;
+    margin-bottom: 5px;    
+    color: #f71414bf;
+  }
+
+  .info--subtitle {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  .info--description {
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: 400;
+  }
+
+  .info--dates {
+    margin: 0;
+    margin-bottom: 5px;
+    color: grey;
+  }
+</style>
+
+<div class="main">
+  <header class="header">
+    <div class="header--title">SARA CASASOLA BORREGO</div>
+    <div class="header--subtitle">FRONT-END DEVELOPER</div>
+  </header>    
+  <hr class="separator">
+  <section class="section">
+    <div class="section--column">
+      <article class="article">
+        <div class="article--title">CONTACT INFO</div>
+        <div class="contact-info">
+          <span>sara.casasola.93@gmail.com</span>
+          <span class="contact-info--icon"><img class="contact-info--icon__email" src="./email.png"/></span>
+        </div>
+        <div class="contact-info">
+          <span>sara_casasola</span>
+          <span class="contact-info--icon"><img class="contact-info--icon__skype" src="./skype.png"/></span>
+        </div>
+        <div class="contact-info">
+          <span>(+34) 670977687</span>
+          <span class="contact-info--icon"><img class="contact-info--icon__phone" src="./phone.png"/></span>
+        </div>
+      </article>  
+      <article>
+        <div class="article--title">EDUCATION</div>
+        <div class="info">
+          <p class="info--title">Scrum Master Certification</p>
+          <p class="info--subtitle">Scrum Managers</p>
+          <p class="info--dates">2021</p>
+        </div>
+        <div class="info">
+          <p class="info--title">Front-end Master</p>
+          <p class="info--subtitle">Lemoncode</p>
+          <p class="info--dates">2020 - 2021</p>
+        </div>
+        <div class="info">
+          <p class="info--title">Formador de Formadores</p>
+          <p class="info--subtitle">Instituto Europero de Formación de Formadores</p>
+          <p class="info--dates">2016</p>
+        </div>
+        <div class="info">
+          <p class="info--title">Electronic Systems Engineering Degree (Telecommunications)</p>
+          <p class="info--subtitle">ETSIT. Málaga University</p>
+          <p class="info--dates">2011 - 2015</p>
+        </div>
+      </article>         
+    </div>
+    <div class="section--column">
+      <article>
+        <div class="article--title">WORK EXPERIENCE</div>
+        <div class="info">
+          <p class="info--title">
+            <span>Sequel Business</span>
+            <span class="info--dates">10/2018 - now</span>
+          </p>
+          <p class="info--subtitle">Senior Front-end Developer</p>
+          <p class="info--description">
+            &#8226; Helping to manage front-end team inside my product team. Organising catchup meetings and reporting the selected work.<br>
+            &#8226; Creating reusable components across the different company products (ReactJS, SASS).<br>
+            &#8226; Fixing bugs and giving support to legacy products (AngularJS).<br>
+            &#8226; Migrating legacy applications to a new framework (MVC/AngularJS to Angular).
+          </p>          
+        </div>
+        <div class="info">
+          <p class="info--title">
+            <span>Knockout Gaming</span>
+            <span class="info--dates">09/2017 - 10/2018</span>
+          </p>
+          <p class="info--subtitle">Front-end Developer</p>
+          <p class="info--description">
+            &#8226;	Develop a complete RESTful API using Node.js, Express and Typescript.<br>
+            &#8226; Develop a new markup based on design prototypes using SASS, Bootstrap 4 and HTLM5.
+          </p>          
+        </div>
+        <div class="info">
+          <p class="info--title">
+            <span>Golden Race - Virtual Sports & Betting</span>
+            <span class="info--dates">04/2017 – 09/2017</span>
+          </p>
+          <p class="info--subtitle">Front-end Developer</p>
+          <p class="info--description">
+              Working developing a website using AngularV2. Also LESS and HTML5 for the markup.
+          </p>          
+        </div>
+        <div class="info">
+            <p class="info--title">
+              <span>Accenture</span>
+              <span class="info--dates">02/2016 – 04/2017</span>
+            </p>
+            <p class="info--subtitle">Front-end Developer</p>
+            <p class="info--description">
+                &#8226;Project: Accenture Cloud. HTML5, LESS, ReactJS.<br>
+                &#8226;Project: PUIG.HTML5, LESS, AngularJSV1.4.
+            </p> 
+            <p class="info--subtitle">Mobile Developer</p>
+            <p class="info--description">
+                Developing Proof Of Concepts for wearables (glasses and watches). Android, Objective-C, Swift.
+            </p>          
+          </div>
+          <div class="info">
+              <p class="info--title">
+                <span>Top Digital</span>
+                <span class="info--dates">08/2015 – 11/2015</span>
+              </p>
+              <p class="info--subtitle">Mobile Developer</p>
+              <p class="info--description">
+                  Working on the intranet application. Android.
+              </p>          
+            </div>
+      </article>
+    </div>
+  </section>
+</div>
